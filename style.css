@@ -1,0 +1,35 @@
+.header-container {
+    border: solid 3px red;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-container {
+    background: #529cf1;
+}
+
+.body-container div {
+    color: white;
+}
+
+.body-container button {
+    background-color: green;
+    color: white;
+}
+
+.header div {
+    height: 200px;
+}
+
+.logo {
+    height: 200px;
+}
+
+.menu-icon {
+    height: 200px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
