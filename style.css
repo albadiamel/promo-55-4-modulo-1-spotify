@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 .header-container {
@@ -8,28 +9,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+    color: white;
 }
 
 .body-container {
     background: #529cf1;
-}
-
-.body-container div {
-    color: white;
-}
-
-.body-container button {
-    background-color: #26B758;
-    color: white;
-    width: 200px;
-    border: 3px solid #26B758;
-    border-radius: 30px;
-    padding: 10px;
-    font-weight: bold;
-}
-
-.header div {
-    height: 200px;
 }
 
 .logo {
@@ -42,4 +27,173 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif
+}
+
+.links {
+    display: none;
+}
+
+button {
+    background-color: #26B758;
+    color: white;
+    width: 90%;
+    border: 3px solid #26B758;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.try-premium {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.premium-subtext {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+
+}
+
+.terminos {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.container-2 {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.why-premium {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.parrafo1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.parrafo2 {
+    font-size: 19px;
+}
+
+.benefit-1 {
+    width: 150px;
+}
+.benefit-2 {
+    width: 150px;
+}
+.benefit-3 {
+    width: 150px;
+}
+.benefit-4 {
+    width: 150px;
+}
+
+
+@media screen and (min-width: 736px) {
+    .links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .links li {
+        list-style: none;
+    }
+
+    .links li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .body-container button {
+    width: 200px;
+    }
+
+    .container-1 {
+    background: url(./assets/img/premium_dancer.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    }
+
+    .reasons {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .benefit-1 {
+    width: 150px;
+    }
+    .benefit-2 {
+    width: 150px;
+    }
+    .benefit-3 {
+    width: 150px;
+    }
+    .benefit-4 {
+    width: 150px;
+    }
+
+    .parrafo1 {
+        text-align: center;
+    }
+
+    .parrafo2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reasons {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .benefit-1 {
+    width: 150px;
+    }
+    .benefit-2 {
+    width: 150px;
+    }
+    .benefit-3 {
+    width: 150px;
+    }
+    .benefit-4 {
+    width: 150px;
+    } 
+
+    .parrafo1 {
+        text-align: center;
+    }
+
+    .parrafo2 {
+        text-align: center;
+    }
 }
