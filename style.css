@@ -14,8 +14,13 @@
 }
 
 .body-container button {
-    background-color: green;
+    background-color: #26B758;
     color: white;
+    width: 200px;
+    border: 3px solid #26B758;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .header div {
@@ -31,5 +36,5 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif
 }
