@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-.body-container {
+.blue-container {
     background: #529cf1;
 }
 
@@ -78,18 +78,20 @@ button {
     margin-top: 50px;
 }
 
-.flex-container {
+.white-container {
     background-color: white;
     padding: 10px;
+    height:200vw;
 }
 
 .cajas-flex {
     padding: 0px;
-    width: 500px;
     height: 200px;
 }
+
 .caja {
-    margin: 10px;  
+    margin: 10px;
+    display: flex;
 }
 
 .caja p {
@@ -123,6 +125,20 @@ button {
     width: 150px;
 }
 
+footer{
+    background-color: black;
+    color: white;
+}
+
+.links-footer li{
+    list-style: none;
+}
+
+.links-footer a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
 
 @media screen and (min-width: 736px) {
     .links {
@@ -145,7 +161,7 @@ button {
         display: none;
     }
 
-    .body-container button {
+    .blue-container button {
         width: 200px;
     }
 
@@ -173,7 +189,6 @@ button {
     }
 
     .cajas-flex {
-        text-align: center; 
         display: flex; 
         justify-content: center;
         flex-direction: row;
@@ -221,7 +236,6 @@ button {
 
     .cajas-flex {
         padding: 0px;
-        width: 500px;
         height: 200px;
         display: flex;
         justify-content: space-between;
