@@ -80,18 +80,18 @@ button {
 
 .white-container {
     background-color: white;
-    padding: 10px;
-    height:200vw;
+    padding: 50px 10px 100px
 }
 
 .cajas-flex {
     padding: 0px;
-    height: 200px;
+
 }
 
 .caja {
     margin: 10px;
     display: flex;
+    gap: 50px;
 }
 
 .caja p {
@@ -131,7 +131,12 @@ footer{
 }
 
 .links-footer li{
-    list-style: none;
+    list-style: none;;
+}
+
+.links-footer {
+    margin: 0px;
+    padding: 50px
 }
 
 .links-footer a{
@@ -173,6 +178,8 @@ footer{
         background: url(./assets/img/premium_dancer.png);
         background-position: top right;
         background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
     }
     
     .benefit-1 {
@@ -193,9 +200,9 @@ footer{
         justify-content: center;
         flex-direction: row;
         gap: 250px;
+        flex-wrap: wrap;
     }
     .caja {
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -236,7 +243,6 @@ footer{
 
     .cajas-flex {
         padding: 0px;
-        height: 200px;
         display: flex;
         justify-content: space-between;
     }
