@@ -78,10 +78,22 @@ button {
     margin-top: 50px;
 }
 
-.container-2 {
+.flex-container {
     background-color: white;
     padding: 10px;
-    font-family: 'Roboto', sans-serif;
+}
+
+.cajas-flex {
+    padding: 0px;
+    width: 500px;
+    height: 200px;
+}
+.caja {
+    margin: 10px;  
+}
+
+.caja p {
+    font-size: 19px;
 }
 
 .why-premium {
@@ -134,66 +146,84 @@ button {
     }
 
     .body-container button {
-    width: 200px;
+        width: 200px;
+    }
+
+    .try-premium {
+        margin-top: 0px;
     }
 
     .container-1 {
-    background: url(./assets/img/premium_dancer.png);
-    background-position: top right;
-    background-repeat: no-repeat;
+        background: url(./assets/img/premium_dancer.png);
+        background-position: top right;
+        background-repeat: no-repeat;
     }
-
-    .reasons {
-    display: flex;
-    justify-content: space-between;
-    }
-
+    
     .benefit-1 {
-    width: 150px;
+        width: 150px;
     }
     .benefit-2 {
-    width: 150px;
+        width: 150px;
     }
     .benefit-3 {
-    width: 150px;
+        width: 150px;
     }
     .benefit-4 {
-    width: 150px;
+        width: 150px;
     }
 
-    .parrafo1 {
-        text-align: center;
+    .cajas-flex {
+        text-align: center; 
+        display: flex; 
+        justify-content: center;
+        flex-direction: row;
+        gap: 250px;
+    }
+    .caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    .parrafo2 {
-        text-align: center;
+    .caja img {
+        object-fit: cover;
+        max-width: 150px;
+        max-height: 150px;
     }
+
+    .caja p {
+        margin: 0px;
+        font-size: 17px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
     .reasons {
-    display: flex;
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 70px;
+        margin-right: 70px;
     }
 
     .benefit-1 {
-    width: 150px;
+        width: 150px;
     }
     .benefit-2 {
     width: 150px;
     }
     .benefit-3 {
-    width: 150px;
+        width: 150px;
     }
     .benefit-4 {
-    width: 150px;
+        width: 150px;
     } 
 
-    .parrafo1 {
-        text-align: center;
-    }
-
-    .parrafo2 {
-        text-align: center;
+    .cajas-flex {
+        padding: 0px;
+        width: 500px;
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
     }
 }
