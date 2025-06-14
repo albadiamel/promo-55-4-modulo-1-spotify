@@ -124,10 +124,11 @@ footer{
 }
 
 .links-footer li{
-    list-style: none;;
+    list-style: none;
 }
 
 .links-footer {
+    max-width: 900px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -157,6 +158,11 @@ footer{
     justify-content: flex-end;
     padding-right: 15px;
     padding-bottom: 0px;
+}
+
+.text-footer {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media screen and (min-width: 736px) {
@@ -259,5 +265,6 @@ footer{
     .caja {
         align-items: center;
         display: block;
+        max-width: fit-content;
     }
 }
