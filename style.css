@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif
 }
-
+/* CABECERA + SECCION AZUL */
 .header-container {
     border: solid 3px black;
     background: black;
@@ -23,10 +24,6 @@ body {
 
 .menu-icon {
     height: 50px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif
 }
 
 .links {
@@ -78,23 +75,24 @@ button {
     margin-top: 50px;
 }
 
+/* SECCION BLANCA */
 .white-container {
     background-color: white;
     padding: 50px 10px 100px
 }
 
-.cajas-flex {
+.flex-boxs {
     padding: 0px;
     display: grid;
 }
 
-.caja {
+.box {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
-.caja p {
+.box p {
     font-size: 19px;
 }
 
@@ -117,31 +115,33 @@ button {
     width: 150px;
 }
 
+/* FOOTER */
 footer{
     background-color: black;
-    color: white;
-    align-items: baseline;
+    color: grey;
+    font-size: 12px;
+    /*align-items: baseline;*/
 }
 
-.links-footer li{
+.copyright-and-links {
+    display: flex;
+    justify-content: space-between;
+}
+.links-footer li {
     list-style: none;
 }
-
+.links-footer a {
+    text-decoration: none;
+    color: grey;
+}
 .links-footer {
-    max-width: 900px;
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
     margin: 0px;
     padding-top: 0px;
     padding-bottom: 15px;
-    padding: 50px
-}
-
-.links-footer a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
 }
 
 .flag {
@@ -152,7 +152,9 @@ footer{
     justify-content: flex-end;
     gap: 15px;
 }
-
+.flag img {
+    width: 25px;
+}
 .copyright {
     display: flex;
     justify-content: flex-end;
@@ -160,11 +162,7 @@ footer{
     padding-bottom: 0px;
 }
 
-.text-footer {
-    display: flex;
-    justify-content: space-around;
-}
-
+/* PANTALLA TABLET*/
 @media screen and (min-width: 736px) {
     .links {
         display: flex;
@@ -194,7 +192,7 @@ footer{
         margin-top: 0px;
     }
 
-    .container-1 {
+    .premium-container {
         background: url(./assets/img/premium_dancer.png);
         background-position: top right;
         background-repeat: no-repeat;
@@ -215,7 +213,7 @@ footer{
         width: 150px;
     }
 
-    .cajas-flex {
+    .flex-boxs {
         display: flex;
         margin: 0px 50px;
         justify-content: space-between;
@@ -223,23 +221,24 @@ footer{
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .caja {
+    .box {
         max-width: 50%;
     }
 
-    .caja img {
+    .box img {
         object-fit: cover;
         max-width: 150px;
         max-height: 150px;
     }
 
-    .caja p {
+    .box p {
         margin: 0px;
         font-size: 17px;
     }
 
 }
 
+/*PANTALLA ORDENADORES*/
 @media screen and (min-width: 1200px) {
     .benefit-1 {
         width: 150px;
@@ -254,7 +253,7 @@ footer{
         width: 150px;
     } 
 
-    .cajas-flex {
+    .flex-boxs {
         padding: 0px;
         display: grid;
         justify-content: space-between;
@@ -262,7 +261,7 @@ footer{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         align-items: baseline;
     }
-    .caja {
+    .box {
         align-items: center;
         display: block;
         max-width: fit-content;
